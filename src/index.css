@@ -1,7 +1,16 @@
+@font-face {
+  font-family: Hind;
+  src: url(./assets/fonts/Hind-Regular.ttf);
+}
+
 :root {
   font-family: Hind;
   line-height: normal;
   font-weight: 400;
 
   color: var(--Rota-grismusgo, #58585a);
+}
+
+* {
+  margin: 0;
 }
