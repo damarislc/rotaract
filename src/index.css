@@ -3,6 +3,11 @@
   src: url(./assets/fonts/Hind-Regular.ttf);
 }
 
+@font-face {
+  font-family: Rustico;
+  src: url(./assets/fonts/Rustico-Regular.otf);
+}
+
 :root {
   font-family: Hind;
   line-height: normal;

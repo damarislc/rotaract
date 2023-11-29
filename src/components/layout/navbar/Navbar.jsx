@@ -2,13 +2,6 @@ import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { useState } from "react";
 
-const pages = [
-  "Quienes somos?",
-  "Actividades y encuentros",
-  "Contacto",
-  "Dona",
-];
-
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
