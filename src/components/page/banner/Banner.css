@@ -72,8 +72,8 @@
     font-family: 'Hind', sans-serif;
     color: white;
     background-color: #D91B5C;
-    border-radius: 3%;
-    border: none;
+    border-radius: 16px;
+    border: 1px;
     height: 6%;
     width: 12%;
     font-size: 18px;
