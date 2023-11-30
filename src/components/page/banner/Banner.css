@@ -11,9 +11,8 @@
  }
 
 .banner {
-    width: 100%;
     display: grid;
-    height: 100%;
+    height: 546px;
     grid-template-columns: 1fr 1fr;
     background: linear-gradient(180deg, rgb(250, 57, 131), rgb(10, 112, 119)), url('../../../../public/background.png');
     background-size: cover;
@@ -21,19 +20,21 @@
     border: solid 1px black;
 }
 
-
 .group{
-    margin-left: 10%;
-    position: relative;
-    margin-top: 100px;
+    margin-left: 4%;
+    position: absolute;
+    margin-top: 5%;    
 }
 
 .img1{
-    width: 110%;
+    margin-top: 5.6%;
+    position: absolute;
+    height: 436px;
+    width: 777px;
 }
 
 .rightSide{
-    margin: 8% 0 0 20%;
+    margin: 10 0 0 20%;
 }
 
 .rightSide{
@@ -42,25 +43,26 @@
 }
 
 .rightSide h1{
+    margin-top: 40px;
     font-weight: lighter;
-    font-size: 40px;
+    font-size: 30px;
     padding-bottom: 3%;
 }
 
 .tittleRustic h2 {
     font-family: 'Rustico';
     font-weight: 100;
-    font-size: 86px;
+    font-size: 76px;
     text-shadow: 2px 2px 4px black;
     line-height: 1;
 }
 
 .vector1{
-    padding-left: 45%;
+    padding-left: 32%;
 }
 
 .rightSide p{
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 2%;
     padding-right: 40%;
     line-height: 2;
@@ -74,8 +76,8 @@
     background-color: #D91B5C;
     border-radius: 16px;
     border: 1px;
-    height: 6%;
-    width: 12%;
+    height: 42px;
+    width: 85px;
     font-size: 18px;
     font-weight: bold;
 }
