@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+@font-face {
+    font-family: Rustico;
+    src: url('../../../assets/fonts/Rustico-Regular.otf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+.banner {
+    width: 100%;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(180deg, rgb(250, 57, 131), rgb(10, 112, 119)), url('../../../../public/background.png');
+    background-size: cover;
+    background-blend-mode: overlay;
+    border: solid 1px black;
+}
+
+
+.group{
+    margin-left: 10%;
+    position: relative;
+    margin-top: 100px;
+}
+
+.img1{
+    width: 110%;
+}
+
+.rightSide{
+    margin: 8% 0 0 20%;
+}
+
+.rightSide{
+    font-family: 'Hind', sans-serif;
+    color: white;
+}
+
+.rightSide h1{
+    font-weight: lighter;
+    font-size: 40px;
+    padding-bottom: 3%;
+}
+
+.tittleRustic h2 {
+    font-family: 'Rustico';
+    font-weight: 100;
+    font-size: 86px;
+    text-shadow: 2px 2px 4px black;
+    line-height: 1;
+}
+
+.vector1{
+    padding-left: 45%;
+}
+
+.rightSide p{
+    font-size: 18px;
+    padding-top: 2%;
+    padding-right: 40%;
+    line-height: 2;
+    padding-bottom: 5%;
+
+}
+
+.buttonSumate{
+    font-family: 'Hind', sans-serif;
+    color: white;
+    background-color: #D91B5C;
+    border-radius: 3%;
+    border: none;
+    height: 6%;
+    width: 12%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
