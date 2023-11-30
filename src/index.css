@@ -1,7 +1,21 @@
+@font-face {
+  font-family: Hind;
+  src: url(./assets/fonts/Hind-Regular.ttf);
+}
+
+@font-face {
+  font-family: Rustico;
+  src: url(./assets/fonts/Rustico-Regular.otf);
+}
+
 :root {
   font-family: Hind;
   line-height: normal;
   font-weight: 400;
 
   color: var(--Rota-grismusgo, #58585a);
+}
+
+* {
+  margin: 0;
 }
