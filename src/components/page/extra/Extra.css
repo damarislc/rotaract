@@ -1,0 +1,60 @@
+.extras {
+  display: flex;
+  background: #f4f4f4;
+}
+
+.icons-extra {
+  margin-left: 10%;
+  margin-top: 157px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.icons-extra .icon-svg {
+  margin-top: 48px;
+  cursor: pointer;
+}
+
+.image-extra {
+  margin-left: 54px;
+}
+
+.data-extra {
+  margin-left: 28px;
+}
+.data-extra h1 {
+  color: #000;
+  font-family: Rustico;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  margin-top: 125px;
+}
+
+.data-extra h1 .underline {
+  margin-top: -15px;
+}
+
+.data-extra h2 {
+  color: #000;
+  font-family: Hind;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 84px;
+}
+
+.data-extra p {
+  color: #000;
+  font-family: Hind;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 452px;
+}
