@@ -1,9 +1,11 @@
+import { Container } from "@mui/material";
 import "./Extra.css";
 
 // eslint-disable-next-line react/prop-types
 const Extra = ({ loadExtraInfo, showhide }) => {
   return (
-    <div className="extras">
+    <Container id="extras-container" className="extras">
+      {/* <div className="extras"> */}
       <div className="icons-extra">
         <svg
           className="icon-svg"
@@ -133,7 +135,8 @@ const Extra = ({ loadExtraInfo, showhide }) => {
           </div>
         )}
       </div>
-    </div>
+      {/* </div> */}
+    </Container>
   );
 };
 

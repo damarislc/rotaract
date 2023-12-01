@@ -1,6 +1,8 @@
-.extras {
+#extras-container {
   display: flex;
   background: #f4f4f4;
+  flex-direction: row;
+  width: 100%;
 }
 
 .icons-extra {
@@ -57,4 +59,34 @@
   font-weight: 400;
   line-height: normal;
   width: 452px;
+}
+
+@media (max-width: 975px) {
+  .extras {
+    flex-direction: column;
+  }
+
+  .icons-extra {
+    /* margin-left: 10%;
+    margin-top: 157px;
+    display: flex;
+    flex-direction: column; */
+    /* justify-content: space-between; */
+    flex-direction: row;
+  }
+
+  .image-extra img {
+    width: 250px;
+  }
+
+  .data-extra p {
+    /* color: #000;
+  font-family: Hind;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 452px; */
+    width: 300px;
+  }
 }
