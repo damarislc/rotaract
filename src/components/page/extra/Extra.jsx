@@ -4,7 +4,7 @@ import "./Extra.css";
 // eslint-disable-next-line react/prop-types
 const Extra = ({ loadExtraInfo, showhide }) => {
   return (
-    <Container id="extras-container" className="extras">
+    <Container id="extras-container" className="extras" maxWidth="false">
       {/* <div className="extras"> */}
       <div className="icons-extra">
         <svg
@@ -78,9 +78,15 @@ const Extra = ({ loadExtraInfo, showhide }) => {
         </svg>
       </div>
       <div className="image-extra">
-        {showhide == "icon1" && <img src="/Extra1.png" alt="Datos Extra" />}
-        {showhide == "icon2" && <img src="/Extra2.png" alt="Datos Extra" />}
-        {showhide == "icon3" && <img src="/Extra3.png" alt="Datos Extra" />}
+        {showhide == "icon1" && (
+          <img src="/Extra1.png" alt="Datos Extra" id="img-extra1" />
+        )}
+        {showhide == "icon2" && (
+          <img src="/Extra2.png" alt="Datos Extra" id="img-extra2" />
+        )}
+        {showhide == "icon3" && (
+          <img src="/Extra3.png" alt="Datos Extra" id="img-extra3" />
+        )}
       </div>
       <div className="data-extra">
         <h1>

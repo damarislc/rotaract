@@ -83,7 +83,8 @@
   width: 342px;
 }
 
-@media (max-width: 975px) {
+@media (max-width: 768px) {
+  /* @media (max-width: 975px) { */
   .organization h1 {
     font-size: 12px;
     margin-top: 18px;

@@ -1,82 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap");
 @font-face {
-    font-family: Rustico;
-    src: url('../../fonts/Rustico-Regular.otf');
+  font-family: Rustico;
+  src: url("../../fonts/Rustico-Regular.otf");
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
- }
-
- .container {
-
-    width: 100%;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    background: url('../../../../public/Imagen11.png');
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-size: 40%
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.mision{
-     margin-top: 8%;
-     margin-left: 30%;
-     margin-right: 60%;
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  background: url("../../../../public/Imagen11.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
 }
 
-.proposito{
-    margin-top: 1%;
-    margin-left: 70%;
-    margin-right: 12%;
+.mision {
+  margin-top: 8%;
+  margin-left: 30%;
+  margin-right: 60%;
 }
 
-.vision{
-    margin-right: 45%;
-    margin-top: 6%;
-    margin-left: 43%;
+.proposito {
+  margin-top: 1%;
+  margin-left: 70%;
+  margin-right: 12%;
 }
 
-.mision h2{
-    text-align: end;
-    font-family: Rustico;
-    color: #009999; 
-    font-size: 38px;
-    font-weight: 100;
+.vision {
+  margin-right: 45%;
+  margin-top: 6%;
+  margin-left: 43%;
 }
 
-.proposito h2{
-    font-family: Rustico;
-    color: #d41c68;
-    font-size: 38px;
-    font-weight: 100;
-   
+.mision h2 {
+  text-align: end;
+  font-family: Rustico;
+  color: #009999;
+  font-size: 38px;
+  font-weight: 100;
 }
 
-.vision h2{
-    font-family: Rustico;
-    color: #0078b0;
-    font-size: 38px;
-    font-weight: 100;
+.proposito h2 {
+  font-family: Rustico;
+  color: #d41c68;
+  font-size: 38px;
+  font-weight: 100;
 }
 
-.mision p{
-    font-size: 16px;
-    font-family: 'Hind';
-    
+.vision h2 {
+  font-family: Rustico;
+  color: #0078b0;
+  font-size: 38px;
+  font-weight: 100;
 }
 
-.proposito p{
-    font-size: 16px;
-    padding-right: 18%;
-    line-height: 25.62px;
-    font-family: 'Hind';
+.mision p {
+  font-size: 16px;
+  font-family: "Hind";
 }
 
-.vision p{
-    font-size: 16px;
-    font-family: 'Hind';
+.proposito p {
+  font-size: 16px;
+  padding-right: 18%;
+  line-height: 25.62px;
+  font-family: "Hind";
+}
 
+.vision p {
+  font-size: 16px;
+  font-family: "Hind";
 }
