@@ -8,11 +8,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
- }
+}
 
 .banner {
     display: grid;
-    height: 546px;
+    height: auto; /* Cambiado a auto para adaptarse al contenido */
     grid-template-columns: 1fr 1fr;
     background: linear-gradient(180deg, rgb(250, 57, 131), rgb(10, 112, 119)), url('../../../../public/background.png');
     background-size: cover;
@@ -20,29 +20,24 @@
     border: solid 1px black;
 }
 
-.group{
+
+.group {
     margin-left: 4%;
-    position: absolute;
-    margin-top: 5%;    
+    margin-top: 5%;
 }
 
-.img1{
-    margin-top: 5.6%;
-    position: absolute;
-    height: 436px;
-    width: 777px;
+.img1 {
+    width: 100%; 
+    height: auto; 
 }
 
-.rightSide{
-    margin: 10 0 0 20%;
-}
-
-.rightSide{
+.rightSide {
+    margin: 10px 0 0 20%;
     font-family: 'Hind', sans-serif;
     color: white;
 }
 
-.rightSide h1{
+.rightSide h1 {
     margin-top: 40px;
     font-weight: lighter;
     font-size: 30px;
@@ -57,20 +52,18 @@
     line-height: 1;
 }
 
-.vector1{
-    padding-left: 32%;
+.vector1 {
+    padding-left: 50%;
 }
 
-.rightSide p{
+.rightSide p {
     font-size: 16px;
+    max-width: 60%;
     padding-top: 2%;
-    padding-right: 40%;
-    line-height: 2;
     padding-bottom: 5%;
-
 }
 
-.buttonSumate{
+.buttonSumate {
     font-family: 'Hind', sans-serif;
     color: white;
     background-color: #D91B5C;
@@ -81,5 +74,3 @@
     font-size: 18px;
     font-weight: bold;
 }
-
-

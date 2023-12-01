@@ -7,13 +7,8 @@ const Banner = () => {
   return (
     <div className="banner">
       <div className='leftSide'>
-        <div className='groupContainer'>
-          <img className="group" src={Group} alt="" />
-        </div>
-        <div>
-          <img className="img1" src={Img1} alt="" />
-        </div>
-
+        <img className="group" src={Group} alt="" />
+        <img className="img1" src={Img1} alt="" />
       </div>
       <div className='rightSide'>
         <h1>Agentes de cambio que</h1>
