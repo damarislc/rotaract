@@ -1,3 +1,4 @@
+import Mision from "../mision/Mision";
 import Banner from "../banner/Banner";
 import ExtraContainer from "../extra/ExtraContainer";
 import OrganizationContainer from "../organization/OrganizationContainer";
@@ -8,6 +9,7 @@ const IndexContainer = () => {
     <>
       <Index />
       <Banner/>
+      <Mision />
       <OrganizationContainer />
       <ExtraContainer />
     </>
