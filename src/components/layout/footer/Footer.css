@@ -1,0 +1,158 @@
+.div-footer {
+  background: linear-gradient(179deg, #d9377a -22.16%, #0078b0 178.48%);
+  height: 385px;
+
+  color: #fff !important;
+  font-family: Hind;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.div-footer .div-content {
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+}
+
+.div-logo {
+  /*  margin-left: 126px; */
+  margin-top: 111px;
+  /* flex-grow: 1; */
+}
+
+.div-links {
+  margin-top: 88px;
+  /* margin-left: 20px; */
+  /* flex-grow: 0; */
+}
+
+.div-social {
+  margin-top: 101px;
+  /* margin-left: 35px; */
+  /* flex-grow: 0; */
+}
+
+.div-register {
+  margin-top: 90px;
+  /* flex-grow: 2; */
+  align-content: center;
+  /*  margin-left: 223px; */
+}
+
+.div-links ul li {
+  list-style: none;
+}
+
+.div-links ul li a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.div-social h3 {
+  font-weight: 400;
+}
+
+.div-register input {
+  width: 315px;
+  height: 38px;
+  padding: 16px;
+}
+
+.div-register .div-email {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.div-email a {
+  text-decoration: none;
+}
+
+.div-register .div-enviar {
+  margin-left: 28px;
+  color: #fff;
+  font-family: FONTSPRING DEMO - Proxima Nova;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  width: 88px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 16px;
+  background: var(--Rota-turquesa, #099);
+}
+
+/** COPYRIGHT **/
+
+.div-footer .div-copyright {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.copyright-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.copyright-content svg {
+  width: 70px;
+}
+
+/** MEDIA QUERIES **/
+
+@media (max-width: 1200px) {
+  #line-copyright {
+    width: 950px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .div-footer {
+    height: 300px;
+    font-size: 16px;
+  }
+
+  .div-logo {
+    margin-top: 51px;
+  }
+
+  .div-logo img {
+    width: 219px;
+    height: 66px;
+  }
+
+  .div-links {
+    margin-top: 48px;
+  }
+
+  .div-social {
+    margin-top: 41px;
+  }
+
+  .div-register {
+    margin-top: 40px;
+  }
+
+  .div-register .div-enviar {
+    font-size: 16px;
+    width: 68px;
+    margin-left: 14px;
+  }
+}
+
+/** 976px el campo de registro se va para abajo y ya no caben **/
+
+@media (max-width: 768px) {
+}
