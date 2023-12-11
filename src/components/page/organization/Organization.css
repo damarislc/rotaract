@@ -30,13 +30,17 @@
   /* margin-bottom: 145px; */
 }
 
-.organization-service {
+.services .organization-service {
   width: 114px;
   height: 114px;
 }
 
 .organization-service img {
   cursor: pointer;
+}
+.organization-service .title {
+  font-weight: 700;
+  line-height: 110%; /* 17.6px */
 }
 
 .organization-service p {
@@ -45,8 +49,6 @@
   font-family: Hind;
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 110%; /* 17.6px */
 }
 
 .vl {
@@ -83,49 +85,23 @@
   width: 342px;
 }
 
-@media (max-width: 768px) {
-  /* @media (max-width: 975px) { */
-  .organization h1 {
-    font-size: 12px;
-    margin-top: 18px;
-    margin-bottom: 6.32px;
-  }
+.org-carousel {
+  margin-left: 1em;
+  margin-right: 1em;
+}
 
-  .organization .description {
-    font-size: 5.053px;
-    margin-bottom: 24px;
-  }
-  .organization-service,
-  .organization-service img {
-    width: 36px;
-    height: 36px;
-  }
+.org-carousel .organization-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
 
-  .organization-service p {
-    text-align: center;
-    font-family: Hind;
-    font-size: 5.053px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110%; /* 5.558px */
-  }
+.org .title {
+  margin-top: 1em;
+}
 
-  .services-line {
-    margin-top: 48px;
-  }
-  .vl {
-    height: 24px;
-    align-items: center;
-    margin-left: 18px;
-    margin-top: 10px;
-  }
-
-  .vl.two-lines {
-    height: 20px;
-    margin-top: 12px;
-  }
-
-  .org-desc .description {
-    width: 108px;
-  }
+.react-multiple-carousel__arrow {
+  background: #0078b0 !important;
 }
