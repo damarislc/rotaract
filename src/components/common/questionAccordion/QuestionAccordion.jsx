@@ -9,7 +9,7 @@ import {
 
 const QuestionAccordion = ({ item }) => {
   return (
-    <div className="div-accordion">
+    <div className="div-accordion main">
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMore />}
