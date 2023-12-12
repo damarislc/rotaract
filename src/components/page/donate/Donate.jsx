@@ -1,6 +1,5 @@
-import QuestionAccordion from "../../common/QuestionAccordion/QuestionAccordion";
 import "./Donate.css";
-
+import QuestionAccordion from "./QuestionAccordion";
 import {
   Box,
   Container,
