@@ -152,7 +152,33 @@
   }
 }
 
-/** 976px el campo de registro se va para abajo y ya no caben **/
-
 @media (max-width: 768px) {
+  .div-footer .div-logo,
+  .div-footer .div-links,
+  .div-footer .div-social {
+    margin-top: 0;
+  }
+
+  .div-footer .div-register {
+    margin-top: 12px;
+  }
+
+  .div-footer .div-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .div-links a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+
+  .col3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

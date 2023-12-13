@@ -13,7 +13,8 @@ const Footer = () => {
     <div className="div-footer">
       <Media
         queries={{
-          medium: "(max-width: 1024px)",
+          small: "(max-width: 768px)",
+          medium: "(min-width: 769px) and (max-width: 1024px)",
           large: "(min-width: 1025px)",
         }}
       >
@@ -130,6 +131,48 @@ const Footer = () => {
                         <NavLink to="/donate">Dona</NavLink>
                       </li>
                     </ul>
+                  </div>
+                  <div className="col3">
+                    <div className="div-social">
+                      <h3>Social</h3>
+                      <InstagramIcon sx={{ width: "30px", height: "30px" }} />
+                      <MailOutlineIcon sx={{ width: "30px", height: "30px" }} />
+                      <FacebookIcon sx={{ width: "30px", height: "30px" }} />
+                      <PhoneAndroidIcon
+                        sx={{ width: "30px", height: "30px" }}
+                      />
+                    </div>
+                    <div className="div-register">
+                      <p>
+                        ¿Quieres recibir más información?
+                        <br />
+                        ¡Registrate ya mismo y conocé más Rotaract!
+                      </p>
+                      <div className="div-email">
+                        <input type="email" alt="Email" placeholder="Email" />
+                        <a href="mailto:lariojacapital@rotaract4851.org">
+                          <div className="div-enviar">Enviar</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
+            {matches.small && (
+              <>
+                <div className="div-content">
+                  <div className="div-logo">
+                    <img src="/rotaract-blanco.svg" alt="Logo Rotaract" />
+                  </div>
+                  <div className="div-links">
+                    <NavLink to="/">Quienes somos?</NavLink>
+
+                    <NavLink to="/activities">Actividades y encuentros</NavLink>
+
+                    <NavLink to="/contact">Contacto</NavLink>
+
+                    <NavLink to="/donate">Dona</NavLink>
                   </div>
                   <div className="col3">
                     <div className="div-social">
