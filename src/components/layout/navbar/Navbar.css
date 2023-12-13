@@ -149,6 +149,9 @@ nav .menu span {
 
   nav ul.open {
     display: flex;
+    width: auto;
+    align-self: flex-end;
+    margin-top: -5px;
   }
 
   nav ul li {
