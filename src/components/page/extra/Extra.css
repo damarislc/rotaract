@@ -1,0 +1,155 @@
+#extras-container {
+  display: flex;
+  background: #f4f4f4;
+  flex-direction: row;
+  /* width: 100%; */
+}
+
+.icons-extra {
+  margin-left: 10%;
+  margin-top: 157px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.icons-extra .icon-svg {
+  margin-top: 48px;
+  cursor: pointer;
+}
+
+.image-extra {
+  margin-left: 54px;
+}
+
+.data-extra {
+  margin-left: 28px;
+}
+.data-extra h1 {
+  color: #000;
+  font-family: Rustico;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  margin-top: 125px;
+}
+
+.data-extra h1 .underline {
+  margin-top: -15px;
+}
+
+.data-extra h2 {
+  color: #000;
+  font-family: Hind;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 84px;
+  margin-right: 1em;
+}
+
+.data-extra p {
+  color: #000;
+  font-family: Hind;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 75%;
+}
+
+@media (max-width: 1200px) {
+  .data-extra h1 {
+    margin-top: 55px;
+  }
+
+  .data-extra h2 {
+    margin-top: 60px;
+  }
+
+  .icons-extra {
+    margin-top: 55px;
+  }
+
+  .image-extra img#img-extra1 {
+    /* 515 w, 570h -> 75%*/
+    width: 386px;
+    height: 428px;
+  }
+  .image-extra img#img-extra2,
+  .image-extra img#img-extra3 {
+    /* 515 w, 526h */
+    width: 386px;
+    height: 395px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .icons-extra {
+    margin-top: 0px;
+  }
+
+  .data-extra h1 {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+
+  .data-extra h1 .underline {
+    width: 155px;
+  }
+
+  .data-extra h2 {
+    margin-top: 35px;
+    font-size: 20px;
+  }
+
+  .image-extra img#img-extra1 {
+    /* 515 w, 570h -> 60%*/
+    width: 309px;
+    height: 342px;
+  }
+
+  .image-extra img#img-extra2,
+  .image-extra img#img-extra3 {
+    /* 515 w, 526h */
+    width: 309px;
+    height: 316px;
+  }
+}
+
+@media (max-width: 480px) {
+}
+@media (max-width: 768px) {
+  #extras-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icons-extra {
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+  }
+
+  .icons-extra .icon-svg {
+    margin-left: 1rem;
+  }
+
+  .image-extra {
+    margin-left: 0;
+  }
+
+  .data-extra,
+  .data-extra div {
+    display: flex;
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}
