@@ -186,3 +186,5 @@
     width: 230px;
   }
 }
+
+/* Pantallas <= 315 se desfasa el input email */

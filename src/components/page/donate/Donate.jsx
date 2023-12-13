@@ -42,7 +42,7 @@ const Donate = () => {
 
   return (
     <>
-      <div className="header-container ">
+      <div id="donate-header" className="header-container ">
         <div className="heart-left">
           <svg
             xmlns="http://www.w3.org/2000/svg"

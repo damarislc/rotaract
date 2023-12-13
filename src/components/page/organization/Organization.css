@@ -86,8 +86,8 @@
 }
 
 .org-carousel {
-  margin-left: 1em;
-  margin-right: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 .org-carousel .organization-service {
@@ -104,4 +104,28 @@
 
 .react-multiple-carousel__arrow {
   background: #0078b0 !important;
+}
+
+.react-multiple-carousel__arrow--left {
+  margin-left: -1em;
+}
+
+.react-multiple-carousel__arrow--right {
+  margin-right: -1em;
+}
+
+/* .react-multi-carousel-item--active:nth-child(2) {
+  background-color: red;
+} */
+
+/* .react-multi-carousel-item {
+  margin-left: 0px;
+  margin-right: 0px;
+} */
+
+@media (max-width: 768px) {
+  .organization .description {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 }

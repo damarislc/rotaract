@@ -1,5 +1,5 @@
 /**** BANNER ****/
-.header-container {
+#donate-header.header-container {
   height: 370px;
 
   flex-shrink: 0;
@@ -17,21 +17,21 @@
   grid-template-areas: "heart-left title heart-right";
 }
 
-.heart-left {
+#donate-header .heart-left {
   grid-area: heart-left;
   padding-bottom: 36px;
   justify-self: center;
   align-self: end;
 }
 
-.heart-right {
+#donate-header .heart-right {
   grid-area: heart-right;
   padding-top: 92px;
   justify-self: center;
   align-self: start;
 }
 
-.header-container .title {
+#donate-header.header-container .title {
   grid-area: title;
   display: flex;
   flex-direction: column;
@@ -39,7 +39,7 @@
   justify-content: center;
 }
 
-.header-container h1 {
+#donate-header.header-container h1 {
   color: #fff;
   text-align: center;
   font-family: Rustico;
@@ -181,24 +181,6 @@
 }
 
 @media (max-width: 768px) {
-  /**** BANNER ****/
-  .header-container {
-    height: 230px;
-  }
-
-  .heart-left svg,
-  .heart-right svg {
-    width: 31px;
-    height: 54px;
-  }
-
-  .header-container h1 {
-    font-size: 36px;
-    font-style: normal;
-  }
-
-  /****************/
-
   #donate-main.mobile {
     align-items: center;
   }
@@ -220,4 +202,23 @@
     margin-top: 12px;
     margin-bottom: 30px;
   }
+}
+
+@media (max-width: 600px) {
+  /**** BANNER ****/
+  #donate-header.header-container {
+    height: 230px;
+  }
+
+  .heart-left svg,
+  .heart-right svg {
+    width: 31px;
+    height: 54px;
+  }
+
+  #donate-header.header-container h1 {
+    font-size: 36px;
+    font-style: normal;
+  }
+  /****************/
 }
