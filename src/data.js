@@ -1,23 +1,3 @@
-export const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1200 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1200, min: 464 },
-    items: 3,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 2,
-  },
-};
-
 export const orgData = [
   {
     id: 1,
@@ -67,5 +47,19 @@ export const orgData = [
     imageUrl: "/Finanzas.svg",
     description:
       "Buscamos la autonomía y autofinanciación de las actividades y proyectos. Aquí se piensan ideas para obtener fondos y cubrir lo que demande el servicio en la comunidad.",
+  },
+];
+
+export const questions = [
+  {
+    key: "1",
+    label:
+      "¿Qué tipos de actividades se realizan con las donaciones que se realizan?",
+    text: "Rotaract tiene como objetivo la formación de líderes que aspiran a un cambio en la sociedad. Ese cambio lo hacen mediante acciones que se promueven a través de proyectos de servicio. Tus contribuciones se destinan directamente a estos proyectos que están orientados en diferentes temáticas, como la educación, la salud, el bienestar social, el asistencialismo, el fomento de valores, intervenciones comunitarias, el cuidado del medio ambiente y sus recursos. ",
+  },
+  {
+    key: "2",
+    label: "¿Cómo hago para sumarme al club? ¿Debo pagar para formar parte?",
+    text: "Para sumarte solo debes tener entre 18 y 30 años, y ser de la provincia de La Rioja, Argentina. No debes pagar para sumarte, solo necesitas muchas ganas de ayudar y participar de nuestras reuniones. Únete a nosotros, para que juntos podamos lograr un impacto aún mayor y así mejorar nuestras comunidades.",
   },
 ];

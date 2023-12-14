@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 
-const QuestionAccordion = ({ item }) => {
+const QuestionAccordion = ({ question }) => {
   return (
     <div className="div-accordion main">
       <Accordion>
@@ -16,10 +16,10 @@ const QuestionAccordion = ({ item }) => {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>{item.label}</Typography>
+          <Typography>{question.label}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>{item.text}</Typography>
+          <Typography>{question.text}</Typography>
         </AccordionDetails>
       </Accordion>
     </div>

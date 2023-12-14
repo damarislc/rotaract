@@ -23,11 +23,8 @@
 .organization .services {
   display: flex;
   justify-content: space-between;
-  /* margin-left: 230px; */
   margin-left: 10%;
-  /* margin-right: 230px; */
   margin-right: 10%;
-  /* margin-bottom: 145px; */
 }
 
 .services .organization-service {
@@ -85,47 +82,59 @@
   width: 342px;
 }
 
-.org-carousel {
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+@media (max-width: 1024px) {
+  .organization .description {
+    margin-bottom: 50px;
+  }
+
+  .css-1l7c0cy div {
+    display: flex;
+  }
+
+  .css-1f8sh1y {
+    min-height: 375px;
+  }
+
+  .org-carousel .organization-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+  }
+
+  .org .title {
+    margin-top: 1em;
+  }
 }
-
-.org-carousel .organization-service {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 15px;
-}
-
-.org .title {
-  margin-top: 1em;
-}
-
-.react-multiple-carousel__arrow {
-  background: #0078b0 !important;
-}
-
-.react-multiple-carousel__arrow--left {
-  margin-left: -1em;
-}
-
-.react-multiple-carousel__arrow--right {
-  margin-right: -1em;
-}
-
-/* .react-multi-carousel-item--active:nth-child(2) {
-  background-color: red;
-} */
-
-/* .react-multi-carousel-item {
-  margin-left: 0px;
-  margin-right: 0px;
-} */
 
 @media (max-width: 768px) {
-  .organization .description {
+  .organization .description.proyects {
     margin-left: 16px;
     margin-right: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  .org-carousel .organization-service {
+    max-width: 250px;
+    margin: 0 15px 0;
+    justify-content: start;
+  }
+
+  .organization-service .description {
+    margin-bottom: 0;
+  }
+  /*487*/
+  .css-1f8sh1y {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 450px) {
+  .css-1l7c0cy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
