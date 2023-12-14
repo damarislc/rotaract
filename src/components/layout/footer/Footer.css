@@ -16,6 +16,13 @@
   /* flex-wrap: wrap; */
 }
 
+.whatsapp {
+  z-index: 9;
+  position: absolute;
+  float: right;
+  margin-top: -50px;
+  right: 35px;
+}
 .div-logo {
   /*  margin-left: 126px; */
   margin-top: 111px;
@@ -54,6 +61,11 @@
 
 .div-social h3 {
   font-weight: 400;
+}
+
+.div-social a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .div-register input {

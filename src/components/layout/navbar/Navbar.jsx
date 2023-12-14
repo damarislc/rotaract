@@ -24,16 +24,42 @@ const Navbar = () => {
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li>
-          <NavLink to="/">Quienes somos?</NavLink>
+          <NavLink
+            to="/"
+            onClick={() => {
+              setMenuOpen(!menuOpen);
+            }}
+          >
+            Quienes somos?
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/activities">Actividades y encuentros</NavLink>
+          <NavLink
+            to="/activities"
+            onClick={() => {
+              setMenuOpen(!menuOpen);
+            }}
+          >
+            Actividades y encuentros
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Contacto</NavLink>
+          <NavLink
+            to="/contact"
+            onClick={() => {
+              setMenuOpen(!menuOpen);
+            }}
+          >
+            Contacto
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/donate">
+          <NavLink
+            to="/donate"
+            onClick={() => {
+              setMenuOpen(!menuOpen);
+            }}
+          >
             <div className="dona-div">Dona</div>
           </NavLink>
         </li>
