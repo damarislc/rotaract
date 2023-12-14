@@ -1,0 +1,79 @@
+/**** BANNER ****/
+#contact-header.header-container {
+  height: 370px;
+
+  flex-shrink: 0;
+  opacity: 0.9;
+  background: linear-gradient(264deg, #872175 -3.44%, #d41c68 84.89%),
+    url("/background.png");
+  background-size: cover;
+  background-blend-mode: overlay;
+
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "star-left title star-right";
+}
+
+#contact-header .star-left {
+  grid-area: star-left;
+  padding-bottom: 36px;
+  justify-self: center;
+  align-self: end;
+}
+
+#contact-header .star-right {
+  grid-area: star-right;
+  padding-top: 92px;
+  justify-self: center;
+  align-self: start;
+}
+
+#contact-header.header-container .title {
+  grid-area: title;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact-header.header-container h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Rustico;
+  font-size: 76px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 183.5%;
+}
+/****************/
+
+/* @media (max-width: 835px) {
+  #contact-header.header-container h1 {
+    line-height: 100%;
+  }
+}
+ */
+@media (max-width: 600px) {
+  /**** BANNER ****/
+  #contact-header.header-container {
+    height: 230px;
+  }
+
+  #contact-header .star-left svg,
+  #contact-header .star-right svg {
+    width: 31px;
+    height: 54px;
+  }
+
+  #contact-header.header-container h1 {
+    font-size: 36px;
+    font-style: normal;
+  }
+  #contact-header.header-container .title svg {
+    width: 150px;
+  }
+  /****************/
+}

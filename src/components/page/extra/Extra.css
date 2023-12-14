@@ -144,6 +144,9 @@
   .image-extra {
     margin-left: 0;
   }
+  .data-extra {
+    margin-bottom: 30px;
+  }
 
   .data-extra,
   .data-extra div {
