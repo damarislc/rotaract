@@ -16,6 +16,9 @@ const Activities = ({
   currentPage,
   currentSection,
 }) => {
+  /**
+   * Media queries para cambiar la estructura según el tamaño de la pantalla
+   */
   const isMediumScreen = useMediaQuery({ query: "(max-width: 1024px)" });
   const isLargeScreen = useMediaQuery({ query: "(min-width: 1025px)" });
 
