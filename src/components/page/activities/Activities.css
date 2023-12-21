@@ -51,8 +51,323 @@
 }
 /****************/
 
+.actividades-encuentros {
+  margin: 57px 150px 185px;
+  /* padding-bottom: 90px; */
+}
+
+.actividades-encuentros .options {
+  margin-bottom: 57px;
+}
+
+.option-actividades,
+.option-encuentros {
+  display: inline-flex;
+  padding: 6px 23px;
+  color: #000;
+  text-align: center;
+  font-family: Hind;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.option-actividades.activated,
+.option-encuentros.activated {
+  display: inline-flex;
+  padding: 6px 23px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 85px;
+  background: #872175;
+  color: #fff;
+  text-align: center;
+  font-family: Hind;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.card-title {
+  color: #000;
+  font-family: Hind;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.activity-card .date {
+  color: #000;
+  font-family: Hind;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.activity-card img {
+  max-height: 300px;
+}
+
+.last-activity img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.last-activity::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: linear-gradient(
+    229deg,
+    #099 11.26%,
+    rgba(247, 168, 27, 0.5) 60.47%,
+    #872175 102.99%
+  );
+  border-radius: 10px;
+  opacity: 0.65;
+}
+
+.last-header {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+.last-activity h1 {
+  color: #fff;
+  font-family: Rustico;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 183.5%;
+  margin-left: 35px;
+}
+
+.last-activity h2 {
+  color: #fff;
+  font-family: Hind;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-left: 35px;
+}
+/** GRID **/
+.p1-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "last-activity card1 card2"
+    "last-activity card3 card4";
+}
+
+.last-activity {
+  grid-area: last-activity;
+  justify-self: center;
+  /* align-self: center; */
+  position: relative;
+  padding: 0 !important;
+}
+
+.card1 {
+  grid-area: card1;
+}
+
+.card2 {
+  grid-area: card2;
+}
+
+.card3 {
+  grid-area: card3;
+}
+
+.card4 {
+  grid-area: card4;
+}
+
+.p2-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "card5 card6"
+    "card7 .";
+}
+
+.card5 {
+  grid-area: card5;
+}
+
+.card6 {
+  grid-area: card6;
+}
+
+.card7 {
+  grid-area: card7;
+}
+
+.page2 {
+  display: flex;
+}
+
+.encuentros-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "card1-e card2-e card3-e"
+    "card4-e card5-e .";
+}
+
+.card1-e {
+  grid-area: card1-e;
+}
+
+.card2-e {
+  grid-area: card2-e;
+}
+
+.card3-e {
+  grid-area: card3-e;
+}
+
+.card4-e {
+  grid-area: card4-e;
+}
+
+.card5-e {
+  grid-area: card5-e;
+}
+
+.activities-buttons {
+  position: relative;
+  float: right;
+  margin-top: 60px;
+
+  /* right: 0; */
+}
+
+/* .activities-buttons button {
+  background-color: white;
+  border: 0;
+} */
+
+.btn-prev,
+.btn-next {
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.btn-prev {
+  fill: #fff;
+}
+
+@media (max-width: 1200px) {
+  /* .last-activity {
+    max-height: 500px;
+  } */
+  .page1 {
+    max-height: 600px;
+  }
+
+  .activity-card img {
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .actividades-encuentros {
+    margin: 70px;
+  }
+
+  .actividades-carousel .css-1l7c0cy,
+  .encuentros-carousel .css-1l7c0cy {
+    display: flex;
+    justify-content: center;
+  }
+
+  .actividades-carousel .css-1f8sh1y,
+  .encuentros-carousel .css-1f8sh1y {
+    min-height: 500px;
+  }
+
+  .activity-card img,
+  .encuentros-carousel img {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .actividades-encuentros {
+    margin: 50px 50px 70px;
+  }
+
+  .actividades-carousel .css-1f8sh1y,
+  .encuentros-carousel .css-1f8sh1y {
+    min-height: 450px;
+  }
+
+  .actividades-carousel .css-1l7c0cy div > div > div:not(.last-header),
+  .encuentros-carousel .css-1l7c0cy div > div:not(.last-header),
+  .actividades-carousel .css-1l7c0cy div > div:not(.last-header) {
+    display: flex !important;
+    align-items: center;
+  }
+
+  .activity-card {
+    align-self: center;
+  }
+
+  .activity-card img,
+  .encuentros-carousel img {
+    max-height: 270px;
+  }
+}
+@media (max-width: 560px) {
+  .actividades-encuentros {
+    margin: 30px 30px 30px;
+  }
+
+  .actividades-carousel .css-1f8sh1y,
+  .encuentros-carousel .css-1f8sh1y {
+    min-height: 360px;
+  }
+}
+@media (max-width: 450px) {
+  .actividades-encuentros .options {
+    margin-bottom: 10px;
+  }
+  /* .actividades-encuentros {
+    margin: 30px 30px 30px;
+  } */
+  /* .actividades-carousel .css-1f8sh1y,
+  .encuentros-carousel .css-1f8sh1y {
+    min-height: 360px;
+  } */
+}
+
+/**** BANNER MEDIA QUERIES ****/
 @media (max-width: 1099px) {
-  /**** BANNER ****/
   #img-actividades-encuentros {
     display: none;
   }
@@ -68,7 +383,6 @@
 }
 
 @media (max-width: 600px) {
-  /**** BANNER ****/
   #activities-header.header-container {
     height: 230px;
   }
@@ -83,5 +397,5 @@
     font-size: 36px;
     font-style: normal;
   }
-  /****************/
 }
+/****************/

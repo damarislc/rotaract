@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
+  <g filter="url(#filter0_d_180_751)">
+    <circle cx="36" cy="32" r="32" fill="white"/>
+  </g>
+  <defs>
+    <filter id="filter0_d_180_751" x="0" y="0" width="72" height="72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_180_751"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_180_751" result="shape"/>
+    </filter>
+  </defs>
+  <path d="M 25.309 47.948 C 37.125 47.948 46.704 38.369 46.704 26.553 C 46.704 14.737 37.125 5.159 25.309 5.159 C 13.493 5.159 3.914 14.737 3.914 26.553 C 3.914 38.369 13.493 47.948 25.309 47.948 Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style=""/>
+  <path d="M16.9685 4.91593C17.0888 4.78863 17.1828 4.63889 17.2452 4.47525C17.3077 4.31161 17.3372 4.13728 17.3323 3.96221C17.3273 3.78714 17.2879 3.61476 17.2164 3.45492C17.1448 3.29507 17.0424 3.15088 16.9152 3.03059C16.7879 2.9103 16.6381 2.81626 16.4745 2.75384C16.3108 2.69142 16.1365 2.66184 15.9614 2.66679C15.7864 2.67175 15.614 2.71113 15.4541 2.7827C15.2943 2.85428 15.1501 2.95663 15.0298 3.08393L3.69649 15.0839C3.46244 15.3315 3.33203 15.6592 3.33203 15.9999C3.33203 16.3406 3.46244 16.6684 3.69649 16.9159L15.0298 28.9173C15.1493 29.0473 15.2935 29.1524 15.4539 29.2263C15.6143 29.3002 15.7879 29.3415 15.9644 29.3477C16.1409 29.354 16.3169 29.3251 16.4822 29.2628C16.6475 29.2005 16.7987 29.1059 16.9272 28.9847C17.0556 28.8634 17.1586 28.7178 17.2303 28.5564C17.302 28.3949 17.3409 28.2209 17.3447 28.0443C17.3486 27.8677 17.3173 27.6921 17.2527 27.5277C17.1881 27.3633 17.0915 27.2133 16.9685 27.0866L6.49915 15.9999L16.9685 4.91593Z" fill="black"/>
+</svg>

@@ -1,5 +1,67 @@
+/* eslint-disable react/prop-types */
 import "./Activities.css";
-const Activities = () => {
+import { activitiesData, encuentrosData } from "../../../data";
+import {
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Container,
+} from "@mui/material";
+import { useMediaQuery } from "react-responsive";
+import Carousel from "react-material-ui-carousel";
+const Activities = ({
+  changePage,
+  changeSection,
+  currentPage,
+  currentSection,
+}) => {
+  const isMediumScreen = useMediaQuery({ query: "(max-width: 1024px)" });
+  const isLargeScreen = useMediaQuery({ query: "(min-width: 1025px)" });
+
+  /**
+   * Crear elementos Card a partir del archivo de datos
+   */
+  const activities = activitiesData.map((item) => (
+    <Card className={`activity-card card${item.id}`} key={item.id}>
+      <CardActionArea>
+        <CardMedia component="img" image={item.imageUrl} alt={item.title} />
+        <CardContent>
+          <p className="card-title">{item.title}</p>
+          <p className="date">{item.date}</p>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+  ));
+
+  const lastActivity = (
+    <Container className="last-activity" maxWidth="false">
+      <CardMedia
+        component="img"
+        image="/src/assets/images/actividades/dias-infancias/_DSC4426-copia.JPG"
+        alt="Ultima actividad"
+      />
+      <div className="last-header">
+        <h1>Ultima actividad</h1>
+        <h2>Día de las infancias</h2>
+      </div>
+    </Container>
+  );
+
+  activities.unshift(lastActivity);
+
+  const encuentros = encuentrosData.map((item) => (
+    <Card className={`activity-card card${item.id}-e`} key={item.id}>
+      <CardActionArea>
+        <CardMedia component="img" image={item.imageUrl} alt={item.title} />
+        <CardContent>
+          <p className="card-title">{item.title}</p>
+          <p className="date">{item.date}</p>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+  ));
+
   return (
     <>
       <div id="activities-header" className="header-container ">
@@ -39,6 +101,144 @@ const Activities = () => {
             />
           </svg>
         </div>
+      </div>
+      <div className="actividades-encuentros">
+        <div className="options">
+          <button
+            id="actividades"
+            className={
+              currentSection === "actividades"
+                ? "option-actividades activated"
+                : "option-actividades"
+            }
+            onClick={changeSection}
+          >
+            Actividades
+          </button>
+          <button
+            id="encuentros"
+            className={
+              currentSection === "encuentros"
+                ? "option-encuentros activated"
+                : "option-encuentros"
+            }
+            onClick={changeSection}
+          >
+            Encuentros
+          </button>
+          {console.log(currentSection)}
+          {console.log(currentSection === "actividades")}
+          {console.log(currentSection === "encuentros")}
+          {console.log(currentSection)}
+        </div>
+        {currentSection === "actividades" && (
+          <div id="actividades">
+            {currentPage === "page1" && isLargeScreen && (
+              <Container
+                className="page1 p1-container"
+                sx={{ display: "grid" }}
+                maxWidth="xl"
+              >
+                {activities.slice(0, 5)}
+              </Container>
+            )}
+            {currentPage === "page2" && isLargeScreen && (
+              <Container
+                className="page2 p2-container"
+                sx={{
+                  display: "grid",
+                }}
+              >
+                {activities.slice(5, 8)}
+              </Container>
+            )}
+            {isMediumScreen && (
+              <Carousel
+                className="actividades-carousel"
+                autoPlay={false}
+                indicators={false}
+                navButtonsAlwaysVisible={true}
+              >
+                {activities}
+              </Carousel>
+            )}
+          </div>
+        )}
+        {currentSection === "encuentros" && isLargeScreen && (
+          <Container
+            id="encuentros"
+            className="encuentros-container"
+            sx={{ display: "grid" }}
+          >
+            {encuentros}
+          </Container>
+        )}
+        {currentSection === "encuentros" && isMediumScreen && (
+          <Carousel
+            className="encuentros-carousel"
+            autoPlay={false}
+            indicators={false}
+            navButtonsAlwaysVisible={true}
+          >
+            {encuentros}
+          </Carousel>
+        )}
+
+        {isLargeScreen && (
+          <div className="activities-buttons">
+            <svg
+              width="72"
+              height="72"
+              viewBox="0 0 72 72"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="btn-prev"
+              id="prev"
+              onClick={changePage}
+            >
+              <path
+                d="M 36.01 63.708 C 53.324 63.708 67.359 49.672 67.359 32.359 C 67.359 15.046 53.324 1.011 36.01 1.011 C 18.697 1.011 4.661 15.046 4.661 32.359 C 4.661 49.672 18.697 63.708 36.01 63.708 Z"
+                stroke="black"
+                strokeWidth=".1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                id="prev"
+              />
+              <path
+                d="M 39.697 21.091 C 39.817 20.964 39.911 20.814 39.974 20.65 C 40.036 20.487 40.066 20.312 40.061 20.137 C 40.056 19.962 40.016 19.79 39.945 19.63 C 39.873 19.47 39.771 19.326 39.644 19.206 C 39.516 19.085 39.367 18.991 39.203 18.929 C 39.039 18.866 38.865 18.837 38.69 18.842 C 38.515 18.847 38.342 18.886 38.183 18.958 C 38.023 19.029 37.879 19.132 37.758 19.259 L 26.425 31.259 C 26.191 31.506 26.06 31.834 26.06 32.175 C 26.06 32.516 26.191 32.843 26.425 33.091 L 37.758 45.092 C 37.878 45.222 38.022 45.327 38.182 45.401 C 38.343 45.475 38.516 45.516 38.693 45.523 C 38.869 45.529 39.045 45.5 39.211 45.438 C 39.376 45.375 39.527 45.281 39.656 45.16 C 39.784 45.038 39.887 44.893 39.959 44.731 C 40.03 44.57 40.069 44.396 40.073 44.219 C 40.077 44.043 40.046 43.867 39.981 43.703 C 39.917 43.538 39.82 43.388 39.697 43.262 L 29.228 32.175 L 39.697 21.091 Z"
+                fill="black"
+                id="prev"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="72"
+              height="72"
+              viewBox="0 0 72 72"
+              fill="none"
+              id="next"
+              className="btn-next"
+              onClick={changePage}
+            >
+              <path
+                d="M 36.01 63.708 C 53.324 63.708 67.359 49.672 67.359 32.359 C 67.359 15.046 53.324 1.011 36.01 1.011 C 18.697 1.011 4.661 15.046 4.661 32.359 C 4.661 49.672 18.697 63.708 36.01 63.708 Z"
+                stroke="black"
+                strokeWidth=".1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                fill="#0078B0"
+                id="next"
+              />
+              <path
+                d="M15.0315 27.0841C14.9112 27.2114 14.8172 27.3611 14.7548 27.5247C14.6923 27.6884 14.6628 27.8627 14.6677 28.0378C14.6727 28.2129 14.7121 28.3852 14.7836 28.5451C14.8552 28.7049 14.9575 28.8491 15.0848 28.9694C15.2121 29.0897 15.3619 29.1837 15.5255 29.2462C15.6892 29.3086 15.8635 29.3382 16.0386 29.3332C16.2136 29.3283 16.386 29.2889 16.5459 29.2173C16.7057 29.1457 16.8499 29.0434 16.9702 28.9161L28.3035 16.9161C28.5376 16.6685 28.668 16.3408 28.668 16.0001C28.668 15.6594 28.5376 15.3316 28.3035 15.0841L16.9702 3.08274C16.8507 2.95266 16.7065 2.84762 16.5461 2.77372C16.3857 2.69982 16.2121 2.65853 16.0356 2.65226C15.8591 2.64599 15.6831 2.67486 15.5178 2.73719C15.3525 2.79951 15.2013 2.89406 15.0728 3.01533C14.9444 3.1366 14.8414 3.28219 14.7697 3.44362C14.698 3.60506 14.6591 3.77913 14.6553 3.95572C14.6514 4.13232 14.6827 4.30792 14.7473 4.47232C14.8119 4.63673 14.9085 4.78666 15.0315 4.91341L25.5008 16.0001L15.0315 27.0841Z"
+                fill="white"
+                transform="translate(17,17)"
+                id="next"
+              />
+            </svg>
+          </div>
+        )}
       </div>
     </>
   );

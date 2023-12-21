@@ -63,3 +63,94 @@ export const questions = [
     text: "Para sumarte solo debes tener entre 18 y 30 años, y ser de la provincia de La Rioja, Argentina. No debes pagar para sumarte, solo necesitas muchas ganas de ayudar y participar de nuestras reuniones. Únete a nosotros, para que juntos podamos lograr un impacto aún mayor y así mejorar nuestras comunidades.",
   },
 ];
+
+export const activitiesData = [
+  {
+    key: "1",
+    title: "Campamento",
+    date: "14 diciembre, 2023",
+    imageUrl: "/src/assets/images/actividades/campamento/IMG_0872.jpg",
+    description: "",
+  },
+  {
+    key: "2",
+    title: "SuperReu Temática",
+    date: "14 diciembre, 2023",
+    imageUrl: "/src/assets/images/actividades/superReu/IMG_6124.JPG",
+    description: "",
+  },
+  {
+    key: "3",
+    title: "Concientizacion sobre el VIH",
+    date: "14 diciembre, 2023",
+    imageUrl: "/src/assets/images/actividades/concientizacionVIH/IMG_4952.JPG",
+    description: "",
+  },
+  {
+    key: "4",
+    title: "Cena de Fin de año",
+    date: "14 diciembre, 2023",
+    imageUrl: "/src/assets/images/actividades/cenaFin/IMG_0037.jpg",
+    description: "",
+  },
+  {
+    key: "5",
+    title: "SuperCapa",
+    date: "14 diciembre, 2023",
+    imageUrl: "/src/assets/images/actividades/superCapa/IMG_2163-copia.jpg",
+    description: "",
+  },
+  {
+    key: "6",
+    title: "Cetecult",
+    date: "14 diciembre, 2023",
+    imageUrl: "/src/assets/images/actividades/cetecult/IMG_1778.jpg",
+    description: "",
+  },
+  {
+    key: "7",
+    title: "Peña",
+    date: "14 diciembre, 2023",
+    imageUrl: "/src/assets/images/actividades/pena/IMG_5869-copia.jpg",
+    description: "",
+  },
+];
+
+export const encuentrosData = [
+  {
+    key: "1",
+    title: "Seminario de capacitación distrital",
+    date: "14 diciembre, 2023",
+    imageUrl: "/src/assets/images/encuentros/seminario/IMG-20230930-WA0050.jpg",
+    description: "",
+  },
+  {
+    key: "2",
+    title: "Asamblea distrital",
+    date: "14 diciembre, 2023",
+    imageUrl: "/src/assets/images/encuentros/asamblea/IMG-20220530-WA0072.jpg",
+    description: "",
+  },
+  {
+    key: "3",
+    title: "Conferencia distrital",
+    date: "14 diciembre, 2023",
+    imageUrl:
+      "/src/assets/images/encuentros/conferencia/c5185e03-fa00-42f2-8b07-090886effaf6.jpg",
+    description: "",
+  },
+  {
+    key: "4",
+    title: "Foro de integración",
+    date: "14 diciembre, 2023",
+    imageUrl: "/src/assets/images/encuentros/foro/_DSC0543.JPG",
+    description: "",
+  },
+  {
+    key: "5",
+    title: "ERAUP: Encuentro Rotaractiano Argentino Uruguayo y Paraguayo",
+    date: "14 diciembre, 2023",
+    imageUrl: "/src/assets/images/encuentros/eraup/rwg.jpg",
+    description: "",
+  },
+];
