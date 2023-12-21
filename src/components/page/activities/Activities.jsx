@@ -41,7 +41,7 @@ const Activities = ({
     <Container className="last-activity" maxWidth="false">
       <CardMedia
         component="img"
-        image="/src/assets/images/actividades/dias-infancias/_DSC4426-copia.JPG"
+        image="/actividades/dias-infancias/_DSC4426-copia.JPG"
         alt="Ultima actividad"
       />
       <div className="last-header">
