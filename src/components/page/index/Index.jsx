@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./Index.css";
 import Img1 from "/Imagen1.png";
 import Star from "/Star.png";
@@ -26,7 +27,10 @@ const Index = () => {
             adquirir habilidades profesionales y de liderazgo y, sobre todo,
             servir y divertirse a la vez.
           </p>
-          <button className="buttonSumate">Sumate</button>
+
+          <NavLink to="/contact">
+            <button className="buttonSumate">Sumate</button>
+          </NavLink>
         </div>
       </div>
       <div className="container-mision">
