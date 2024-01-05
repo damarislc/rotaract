@@ -59,13 +59,18 @@
 .actividades-encuentros .options {
   margin-bottom: 57px;
 }
-
+.option-actividades:hover,
+.option-encuentros:hover {
+  filter: drop-shadow(10px 5px 4px #949497);
+}
 .option-actividades,
 .option-encuentros {
   display: inline-flex;
   padding: 6px 23px;
   color: #000;
   text-align: center;
+  gap: 10px;
+  border-radius: 85px;
   font-family: Hind;
   font-size: 16px;
   font-style: normal;
