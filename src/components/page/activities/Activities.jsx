@@ -10,6 +10,8 @@ import {
 } from "@mui/material";
 import { useMediaQuery } from "react-responsive";
 import Carousel from "react-material-ui-carousel";
+import Swal from "sweetalert2";
+
 const Activities = ({
   changePage,
   changeSection,
@@ -26,7 +28,16 @@ const Activities = ({
    * Crear elementos Card a partir del archivo de datos
    */
   const activities = activitiesData.map((item) => (
-    <Card className={`activity-card card${item.id}`} key={item.id}>
+    <Card
+      className={`activity-card card${item.id}`}
+      key={item.id}
+      onClick={() => {
+        Swal.fire({
+          title: item.title,
+          text: item.description,
+        });
+      }}
+    >
       <CardActionArea>
         <CardMedia component="img" image={item.imageUrl} alt={item.title} />
         <CardContent>
@@ -38,7 +49,16 @@ const Activities = ({
   ));
 
   const lastActivity = (
-    <Container className="last-activity" maxWidth="false">
+    <Container
+      className="last-activity"
+      maxWidth="false"
+      onClick={() => {
+        Swal.fire({
+          title: "Día de las infancias",
+          text: "Rotaract Club La Rioja Capital tiene como uno de sus proyectos más importantes la celebración del “Día de las infancias”, donde cada año le acercamos a niños, niñas y adolescentes de los parajes “El Minero”, “Recreo” y “Verde Olivo” un festejo; con regalos, sorpresas y muchas actividades para realizar con ellos y sus familias, todo esto acompañado de una rica merienda.",
+        });
+      }}
+    >
       <CardMedia
         component="img"
         image="/actividades/dias-infancias/_DSC4426-copia.JPG"
@@ -54,7 +74,16 @@ const Activities = ({
   activities.unshift(lastActivity);
 
   const encuentros = encuentrosData.map((item) => (
-    <Card className={`activity-card card${item.id}-e`} key={item.id}>
+    <Card
+      className={`activity-card card${item.id}-e`}
+      key={item.id}
+      onClick={() => {
+        Swal.fire({
+          title: item.title,
+          text: item.description,
+        });
+      }}
+    >
       <CardActionArea>
         <CardMedia component="img" image={item.imageUrl} alt={item.title} />
         <CardContent>

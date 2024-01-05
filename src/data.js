@@ -70,49 +70,56 @@ export const activitiesData = [
     title: "Campamento",
     date: "14 diciembre, 2023",
     imageUrl: "/actividades/campamento/IMG_0872.jpg",
-    description: "",
+    description:
+      "Es un fin de semana de recreación, en el cual se hacen distintas actividades como juegos, dinámicas, capacitaciones, etc. El fin de este proyecto es afianzar los lazos de los miembros del club, motivar con actividades y despejar las mentes. Normalmente nos juntamos en camping o en algún campo y llevamos carpas para acampar, y a lo largo del dia vamos haciendo todas las actividades planeadas.",
   },
   {
     key: "2",
     title: "SuperReu Temática",
     date: "14 diciembre, 2023",
     imageUrl: "/actividades/superReu/IMG_6124.JPG",
-    description: "",
+    description:
+      "Se trata de un Proyecto del Comité de Servicios al club el cual, consiste en una jornada recreativa en cual se establece una tematica cualquiera (Juegos, Años 20, etc) y por cual se trabajan tres ejes fundamentales MOTIVACIÓN, INTROSPECCIÓN Y ENTRETENIMIENTO. A traves de estos se buscar incentivar a los miembros a distenderse y compartir un momento como club que los lleve a crecer personalmente y a expandir/fortalezer las relaciones internas del club, mientras que los miembros crean nuevos lazos con el resto y se llevan un aprendizaje a traves de un lindo momento juntos.",
   },
   {
     key: "3",
     title: "Concientizacion sobre el VIH",
     date: "14 diciembre, 2023",
     imageUrl: "/actividades/concientizacionVIH/IMG_4952.JPG",
-    description: "",
+    description:
+      "Se trata de un Proyecto del Comité de Servicios al club el cual, consiste en una jornada recreativa en cual se establece una tematica cualquiera (Juegos, Años 20, etc) y por cual se trabajan tres ejes fundamentales MOTIVACIÓN, INTROSPECCIÓN Y ENTRETENIMIENTO. A traves de estos se buscar incentivar a los miembros a distenderse y compartir un momento como club que los lleve a crecer personalmente y a expandir/fortalezer las relaciones internas del club, mientras que los miembros crean nuevos lazos con el resto y se llevan un aprendizaje a traves de un lindo momento juntos.",
   },
   {
     key: "4",
     title: "Cena de Fin de año",
     date: "14 diciembre, 2023",
     imageUrl: "/actividades/cenaFin/IMG_0037.jpg",
-    description: "",
+    description:
+      "Cada diciembre realizamos una Cena de fin de año, como un proyecto de nuestro club. El objetivo principal es el de llevar alimentos preparados para distintas familias de nuestra comunidad, permitiéndoles tener una cena completa para las fiestas. En complemento, realizamos entrega de juguetes para los niños de las familias y un kit de higiene.",
   },
   {
     key: "5",
     title: "SuperCapa",
     date: "14 diciembre, 2023",
     imageUrl: "/actividades/superCapa/IMG_2163-copia.jpg",
-    description: "",
+    description:
+      "Cada diciembre realizamos una Cena de fin de año, como un proyecto de nuestro club. El objetivo principal es el de llevar alimentos preparados para distintas familias de nuestra comunidad, permitiéndoles tener una cena completa para las fiestas. En complemento, realizamos entrega de juguetes para los niños de las familias y un kit de higiene.",
   },
   {
     key: "6",
     title: "Cetecult",
     date: "14 diciembre, 2023",
     imageUrl: "/actividades/cetecult/IMG_1778.jpg",
-    description: "",
+    description:
+      "(cena temática cultural): Es una jornada dónde nos informamos sobre la cultura, las costumbres e historia de un país extranjero a través de dinámicas mientras disfrutamos de una cena característica del país en cuestión.",
   },
   {
     key: "7",
     title: "Peña",
     date: "14 diciembre, 2023",
     imageUrl: "/actividades/pena/IMG_5869-copia.jpg",
-    description: "",
+    description:
+      "Para poder llevar a cabo nuestros proyectos y actividades de servicio a la comunidad realizamos una PEÑA SOLIDARIA con el objetivo de recaudar fondos destinados a solventar los gastos de los mismos. De esta forma podemos seguir resolviendo las problemáticas que demandan las comunidades. La peña nos ofrece la oportunidad de compartir en familia y amigos. Disfrutar de diferentes artistas de la ciudad, del buffet y de sorteos.",
   },
 ];
 
@@ -122,14 +129,16 @@ export const encuentrosData = [
     title: "Seminario de capacitación distrital",
     date: "14 diciembre, 2023",
     imageUrl: "/encuentros/seminario/IMG-20230930-WA0050.jpg",
-    description: "",
+    description:
+      "Encuentro de clubes Rotaract, orientado a la capacitación, donde generalmente se busca brindar herramientas y soporte a las actividades y proyectos que los clubes vienen desarrollando desde inicio del periodo. Se realiza generalmente en los meses de Septiembre / Octubre.",
   },
   {
     key: "2",
     title: "Asamblea distrital",
     date: "14 diciembre, 2023",
     imageUrl: "/encuentros/asamblea/IMG-20220530-WA0072.jpg",
-    description: "",
+    description:
+      "Encuentro de Capacitación orientado en brindar a los rotaractianos conocimientos que puedan serles útiles para desempeñar sus tareas en el periodo siguiente. Se realiza generalmente en los meses de Abril / Mayo.",
   },
   {
     key: "3",
@@ -137,20 +146,23 @@ export const encuentrosData = [
     date: "14 diciembre, 2023",
     imageUrl:
       "/encuentros/conferencia/c5185e03-fa00-42f2-8b07-090886effaf6.jpg",
-    description: "",
+    description:
+      "Encuentro de clubes Rotaract donde se realizan los balances del período y se generan espacios de integración entre los socios del Distrito. Generalmente se realiza en el mes de Julio y durante ésta se lleva a cabo el Cambio de Autoridades Distrital.",
   },
   {
     key: "4",
     title: "Foro de integración",
     date: "14 diciembre, 2023",
     imageUrl: "/encuentros/foro/_DSC0543.JPG",
-    description: "",
+    description:
+      "Los Foros de Integración son encuentros distritales no obligatorios. Regularmente su realización depende de la propuesta de un club Rotaract o del interés de los Presidentes en ejercicio o Equipo Distrital. En este tipo de eventos se busca brindar espacios que fomenten la integración entre los rotaractianos del Distrito y el compañerismo. Se suelen realizar por lo general en el mes de Febrero.",
   },
   {
     key: "5",
     title: "ERAUP: Encuentro Rotaractiano Argentino Uruguayo y Paraguayo",
     date: "14 diciembre, 2023",
     imageUrl: "/encuentros/eraup/rwg.jpg",
-    description: "",
+    description:
+      "Es el evento de capacitación que reúne a rotaractianos de los diferentes distritos conformantes de la AIRAUP. El mismo se lleva a cabo una vez al año durante la tercer semana de enero. En estos 7 días, alrededor de 400 jóvenes participan de actividades de capacitación, servicio e integración. Dada su importancia y trascendencia a lo largo de los años, no sólo asisten personas de los países mencionados, sino que también participan rotaractianos de otros países. El objetivo principal del ERAUP es brindar un espacio para la capacitación y el desarrollo de sus asistentes. Los rotaractianos participan de mesas de trabajo de acuerdo al rol y cargo que ocupan en sus respectivos clubes Rotaract, destinando a tal fin un aproximado de 40 hs. Por la trascendencia del evento, el Presidente de Rotary International envía representantes cada año para que participen de toda la jornada. También suele ser reconocido de interés nacional, provincial y/o municipal por su carácter internacional, cultural y por las tareas de capacitación, servicio e integración que se llevan a cabo cada año.",
   },
 ];
