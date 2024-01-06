@@ -35,6 +35,11 @@
 .organization-service img {
   cursor: pointer;
 }
+
+.organization-service img:hover {
+  filter: drop-shadow(10px 5px 4px #949497);
+}
+
 .organization-service .title {
   font-weight: 700;
   line-height: 110%; /* 17.6px */

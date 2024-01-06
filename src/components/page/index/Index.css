@@ -1,0 +1,204 @@
+/************* BANER **************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.banner-index {
+  display: grid;
+  height: auto; /* Cambiado a auto para adaptarse al contenido */
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(180deg, rgb(250, 57, 131), rgb(10, 112, 119)),
+    url("/background.png");
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.banner-index .star {
+  margin-left: 4%;
+  margin-top: 5%;
+}
+
+.banner-index .img1 {
+  width: 100%;
+  height: auto;
+}
+
+.banner-index .leftSide {
+  display: grid;
+  align-items: end;
+}
+
+.banner-index .rightSide {
+  align-self: center;
+  font-family: "Hind", sans-serif;
+  color: white;
+}
+
+.banner-index .rightSide h1 {
+  margin-top: 40px;
+  font-weight: lighter;
+  font-size: 30px;
+  padding-bottom: 3%;
+}
+
+.tittleRustic h2 {
+  font-family: "Rustico";
+  font-weight: 100;
+  font-size: 76px;
+
+  line-height: 1;
+}
+
+.vector1 {
+  /* padding-left: 50%; */
+}
+
+.banner-index .rightSide p {
+  font-size: 16px;
+  max-width: 80%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
+.buttonSumate {
+  font-family: "Hind", sans-serif;
+  color: white;
+  background-color: #d91b5c;
+  border-radius: 16px;
+  border: 1px;
+  height: 42px;
+  width: 85px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.buttonSumate:hover {
+  filter: drop-shadow(5px 5px 4px #29292b);
+}
+
+/************* END BANER **************/
+/************* MISION **************/
+
+.container-mision {
+  width: 100%;
+  display: none;
+  grid-template-rows: 1fr 1fr 1fr;
+  background: url("/Imagen11.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+}
+
+.mision {
+  margin-top: 8%;
+  margin-left: 30%;
+  margin-right: 60%;
+}
+
+.proposito {
+  margin-top: 1%;
+  margin-left: 70%;
+  margin-right: 12%;
+}
+
+.vision {
+  margin-right: 45%;
+  margin-top: 6%;
+  margin-left: 43%;
+}
+
+.mision h2 {
+  text-align: end;
+  font-family: Rustico;
+  color: #009999;
+  font-size: 38px;
+  font-weight: 100;
+}
+
+.proposito h2 {
+  font-family: Rustico;
+  color: #d41c68;
+  font-size: 38px;
+  font-weight: 100;
+}
+
+.vision h2 {
+  font-family: Rustico;
+  color: #0078b0;
+  font-size: 38px;
+  font-weight: 100;
+}
+
+.mision p {
+  font-size: 16px;
+  font-family: "Hind";
+}
+
+.proposito p {
+  font-size: 16px;
+  padding-right: 18%;
+  line-height: 25.62px;
+  font-family: "Hind";
+}
+
+.vision p {
+  font-size: 16px;
+  font-family: "Hind";
+}
+
+/************* END MISION **************/
+
+@media (max-width: 1200px) {
+  /** BANER **/
+  .tittleRustic h2 {
+    font-size: 60px;
+  }
+
+  .banner-index .rightSide p {
+    /*  font-size: 16px; */
+    max-width: 100%;
+    /* padding-top: 2%;
+    padding-bottom: 5%; */
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /** BANER **/
+  .tittleRustic h2 {
+    font-size: 50px;
+  }
+
+  .banner-index .rightSide p {
+    /* font-size: 16px; */
+    max-width: 100%;
+    margin-right: 15px;
+    /* padding-top: 2%;
+    padding-bottom: 5%; */
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-index {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tittleRustic,
+  .rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 560px) {
+}
+@media (max-width: 450px) {
+}

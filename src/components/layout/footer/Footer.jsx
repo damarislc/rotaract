@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import { useMediaQuery } from "react-responsive";
 
 const Footer = () => {
@@ -186,10 +185,15 @@ const Footer = () => {
             </div>
             <div className="col3">
               <div className="div-social">
-                <InstagramIcon sx={{ width: "30px", height: "30px" }} />
-                <MailOutlineIcon sx={{ width: "30px", height: "30px" }} />
-                <FacebookIcon sx={{ width: "30px", height: "30px" }} />
-                <PhoneAndroidIcon sx={{ width: "30px", height: "30px" }} />
+                <a href="https://www.instagram.com/rotaractlariojacapital/">
+                  <InstagramIcon sx={{ width: "30px", height: "30px" }} />
+                </a>
+                <a href="mailto:lariojacapital@rotaract4851.org">
+                  <MailOutlineIcon sx={{ width: "30px", height: "30px" }} />
+                </a>
+                <a href="https://chat.whatsapp.com/Kiy7QqXPLDF9fCLmDnV0DT">
+                  <PhoneAndroidIcon sx={{ width: "30px", height: "30px" }} />
+                </a>
               </div>
               <div className="div-register">
                 <p>¡Registrate ya mismo y conocé más Rotaract!</p>

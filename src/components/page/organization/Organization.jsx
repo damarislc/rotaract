@@ -164,8 +164,10 @@ const Organization = ({ loadOrgDesc, showhide }) => {
             <div className="org-desc">
               <h1>Desarrollo Profesional</h1>
               <p className="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                pariatur odit eum voluptate dolores iure.
+                Se encarga de brindar las herramientas para que se cumplan los
+                objetivos de cada proyecto. Y también trata en mejorar las
+                habilidades personales de cada miembro (liderazgo, comunicación
+                efectiva, trabajo en equipo, etc.)
               </p>
             </div>
           )}
@@ -174,8 +176,9 @@ const Organization = ({ loadOrgDesc, showhide }) => {
             <div className="org-desc">
               <h1>Servicio a la comunidad</h1>
               <p className="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                pariatur odit eum voluptate dolores iure.
+                Llevan a cabo proyectos de servicio según las necesidades de las
+                comunidades con las que tomamos contacto y genera un plan de
+                acción.
               </p>
             </div>
           )}
@@ -184,8 +187,11 @@ const Organization = ({ loadOrgDesc, showhide }) => {
             <div className="org-desc">
               <h1>Servicio al club</h1>
               <p className="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                pariatur odit eum voluptate dolores iure.
+                Se ocupa del bienestar de los miembros. Para que el equipo sea
+                eficiente se debe fortalecer el lazo de amistad de los
+                integrantes. También crear un clima agradable para que estén
+                cómodos y se sientan parte del club. Hacemos campamentos,
+                reuniones temáticas, festejamos cumples, etc.
               </p>
             </div>
           )}
@@ -194,8 +200,10 @@ const Organization = ({ loadOrgDesc, showhide }) => {
             <div className="org-desc">
               <h1>Servicio Internacional</h1>
               <p className="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                pariatur odit eum voluptate dolores iure.
+                En el mundo hay 10,698 clubes Rotaract, distribuidos en 180
+                países. Por eso la importancia de este comité, ya que crea y
+                fortalece los lazos con clubes de todo el mundo, a través de
+                intercambios, hermanamientos y fluida comunicación.
               </p>
             </div>
           )}
@@ -204,8 +212,10 @@ const Organization = ({ loadOrgDesc, showhide }) => {
             <div className="org-desc">
               <h1>Comunicaciones</h1>
               <p className="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                pariatur odit eum voluptate dolores iure.
+                Se ocupa del correcto manejo de la información en club, de la
+                difusión del ideal y actividades de Rotaract. Además, se
+                encargan de generar, mantener y fortalecer vínculos con alianzas
+                y colaboradores.
               </p>
             </div>
           )}
@@ -214,8 +224,9 @@ const Organization = ({ loadOrgDesc, showhide }) => {
             <div className="org-desc">
               <h1>Finanzas</h1>
               <p className="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                pariatur odit eum voluptate dolores iure.
+                Buscamos la autonomía y autofinanciación de las actividades y
+                proyectos. Aquí se piensan ideas para obtener fondos y cubrir lo
+                que demande el servicio en la comunidad.
               </p>
             </div>
           )}
