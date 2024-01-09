@@ -35,6 +35,7 @@ const Activities = ({
         Swal.fire({
           title: item.title,
           text: item.description,
+          confirmButtonColor: "#d41c68",
         });
       }}
     >
@@ -56,6 +57,7 @@ const Activities = ({
         Swal.fire({
           title: "Día de las infancias",
           text: "Rotaract Club La Rioja Capital tiene como uno de sus proyectos más importantes la celebración del “Día de las infancias”, donde cada año le acercamos a niños, niñas y adolescentes de los parajes “El Minero”, “Recreo” y “Verde Olivo” un festejo; con regalos, sorpresas y muchas actividades para realizar con ellos y sus familias, todo esto acompañado de una rica merienda.",
+          confirmButtonColor: "#d41c68",
         });
       }}
     >
@@ -81,6 +83,7 @@ const Activities = ({
         Swal.fire({
           title: item.title,
           text: item.description,
+          confirmButtonColor: "#d41c68",
         });
       }}
     >

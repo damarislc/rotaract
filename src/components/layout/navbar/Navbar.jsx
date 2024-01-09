@@ -55,6 +55,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
+            className="dona-link"
             to="/donate"
             onClick={() => {
               setMenuOpen(!menuOpen);

@@ -1,8 +1,3 @@
-.active {
-  color: #009999;
-  text-decoration: underline;
-  font-weight: 700;
-}
 nav {
   display: flex;
   justify-content: space-between;
@@ -45,7 +40,7 @@ nav ul li a {
   overflow: hidden;
 }
 
-nav ul li a::before {
+nav ul li a:not(.dona-link)::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -57,7 +52,7 @@ nav ul li a::before {
   transition: width 0.2s ease-in-out;
 }
 
-nav ul li a::after {
+nav ul li a:not(.dona-link)::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -69,13 +64,38 @@ nav ul li a::after {
   transition: width 0.2s ease-in-out;
 }
 
+.active {
+  color: #009999;
+  font-weight: 700;
+}
+
+nav ul li .active:not(.dona-link)::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: #009999;
+  transition: width 0.2s ease-in-out;
+}
+
+nav ul li .active:not(.dona-link)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 100%;
+  height: 2px;
+  background-color: #009999;
+  transition: width 0.2s ease-in-out;
+}
+
 nav ul li a:hover::before,
 nav ul li a:hover::after {
   width: 100%;
-}
-
-nav ul li a:not(.active):hover {
-  /* ? */
 }
 
 nav .dona-div {
@@ -93,6 +113,14 @@ nav .dona-div {
   font-family: Hind;
   font-weight: 700;
   word-wrap: break-word;
+}
+
+nav .dona-div:hover {
+  filter: drop-shadow(5px 5px 4px #29292b);
+}
+
+nav ul li .active .dona-div {
+  background: #872175;
 }
 
 nav .menu {
