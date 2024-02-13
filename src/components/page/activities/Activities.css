@@ -297,6 +297,83 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus {
   box-shadow: 0 0 0 3px rgba(92, 92, 92, 0.2) !important;
 }
 
+.page1,
+.encuentros-container,
+.page2 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/******* Gallery *********/
+.gallery {
+  padding: 37px 150px 79px;
+  background-color: #f4f4f4;
+  /* padding-bottom: 90px; */
+}
+.gallery-header {
+  display: flex;
+  align-items: center;
+}
+
+.gallery-header .gallery-title h1 {
+  color: #000;
+  font-family: Rustico;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 45.6px */
+}
+
+.gallery-button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.gallery-button a {
+  text-decoration: none;
+}
+
+.goto-intagram {
+  width: 184px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #0078b0;
+  cursor: pointer;
+  color: #fff;
+  font-family: Hind;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+}
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+.image-container {
+  /* margin-bottom: 43px; */
+  margin: 43px 31px 43px 0px; /*top right bottom left*/
+}
+
+.image-container img {
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   /* .last-activity {
     max-height: 500px;
@@ -330,11 +407,22 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus {
   .encuentros-carousel img {
     max-height: 400px;
   }
+
+  .gallery {
+    padding: 37px 70px 37px;
+  }
+
+  .image-container {
+    margin: 25px;
+  }
 }
 
 @media (max-width: 768px) {
+  .actividades-encuentros .options {
+    margin-bottom: 0;
+  }
   .actividades-encuentros {
-    margin: 50px 50px 70px;
+    margin: 50px 50px 0px;
   }
 
   .actividades-carousel .css-1f8sh1y,
@@ -357,15 +445,38 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus {
   .encuentros-carousel img {
     max-height: 270px;
   }
+
+  .gallery-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-button {
+    margin: 1.5em 0;
+    /*  margin-top: 1em;
+    margin-left: 0; */
+  }
+
+  .image-container {
+    margin: 1em;
+  }
+
+  .gallery {
+    padding: 37px 30px 37px;
+  }
 }
 @media (max-width: 560px) {
   .actividades-encuentros {
-    margin: 30px 30px 30px;
+    margin: 30px 30px 0px;
   }
 
   .actividades-carousel .css-1f8sh1y,
   .encuentros-carousel .css-1f8sh1y {
     min-height: 360px;
+  }
+
+  .gallery {
+    padding: 37 30px 37px;
   }
 }
 @media (max-width: 450px) {

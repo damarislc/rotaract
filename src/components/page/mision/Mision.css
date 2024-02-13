@@ -1,4 +1,9 @@
-* {
+.mision-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -70,3 +75,4 @@
   font-size: 16px;
   font-family: "Hind";
 }
+ */
