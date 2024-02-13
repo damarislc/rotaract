@@ -1,6 +1,32 @@
 .mision-container {
   display: flex;
   justify-content: center;
+  margin-top: 107px;
+}
+
+@media (max-width: 1200px) {
+  .mision-container {
+    margin-left: 120px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mision-container {
+    margin-top: 40px;
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mision-container {
+    margin-top: -70px;
+    margin-left: 30px;
+    padding: 0;
+  }
+}
+@media (max-width: 560px) {
+}
+@media (max-width: 450px) {
 }
 
 /* * {

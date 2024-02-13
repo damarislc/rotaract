@@ -7,7 +7,7 @@ const IndexContainer = () => {
   return (
     <>
       <Index />
-      <Mision />
+      {/* <Mision /> */}
       <OrganizationContainer />
       <ExtraContainer />
     </>
