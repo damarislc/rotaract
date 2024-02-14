@@ -199,26 +199,39 @@
   }
 }
 
+@media (max-width: 450px) {
+  .div-footer {
+    height: 380px;
+  }
+  .div-content {
+    flex-direction: column;
+  }
+  .div-links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 15px;
+  }
+  .col3 {
+    align-items: start;
+    margin-left: 16px;
+  }
+}
+
 @media (max-width: 315px) {
   .div-footer {
-    height: 400px;
+    height: 450px;
   }
-  .div-email {
+  .div-register .div-email {
     flex-direction: column;
+    align-items: start;
   }
 
   .div-email input {
     margin-bottom: 12px;
   }
-  /* .div-register {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
 
-  .div-register p {
-    margin-left: 12px;
+  .div-register .div-enviar {
+    margin-left: 0;
   }
 }
-
-/* Pantallas <= 315 se desfasa el input email */
