@@ -50,7 +50,7 @@
 }
 /****************/
 #contact-main {
-  margin: 63px 150px 77px 155px;
+  margin: 63px 0px 77px 155px;
 }
 #contact-main h1 {
   color: #000;
@@ -143,6 +143,77 @@ textarea.contact-textfield {
   color: #000;
   text-decoration: none;
 }
+
+@media (max-width: 1200px) {
+  .contact-textfield,
+  .send-message {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #contact-main {
+    margin-left: 50px;
+  }
+
+  .contact-textfield,
+  .send-message {
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  #contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-textfield,
+  .send-message {
+    width: 500px;
+  }
+
+  .contact-info {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box-contact {
+    margin-right: 17.81px;
+  }
+}
+@media (max-width: 560px) {
+  #contact-main {
+    margin-left: 12px;
+    margin-bottom: 40px;
+  }
+
+  .contact-textfield,
+  .send-message {
+    width: 400px;
+  }
+
+  /* .contact-info {
+    flex-direction: column;
+  } */
+}
+@media (max-width: 450px) {
+  .contact-textfield,
+  .send-message {
+    width: 273px;
+  }
+}
+/* Galaxy Fold */
+@media (max-width: 280px) {
+  .contact-textfield,
+  .send-message,
+  .box-contact {
+    width: 243px;
+  }
+}
+
 /* @media (max-width: 835px) {
   #contact-header.header-container h1 {
     line-height: 100%;

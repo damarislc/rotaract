@@ -209,3 +209,62 @@ export const galleryData = [
     title: "Campaña",
   },
 ];
+
+export const testimoniosData = [
+  {
+    id: 1,
+    imgUrl: "/testimonios/Mariano-Allende.png",
+    name: "Mariano Allende Cragnolini",
+    opinion:
+      "Rotaract abre puertas a gente y lugares que te hacen crecer muchísimo, y que es el lugar donde se forjan lideres que cambian realidades.",
+  },
+  {
+    id: 2,
+    imgUrl: "/testimonios/Facu-Gomez.png",
+    name: "Facu Gómez Gaset",
+    opinion:
+      "Rotaract es una familia, allí conocí personas maravillosas, hice amigos y juntos trabajamos día a día, para alcanzar diversos objetivos en común. Un lugar increíble para conectar con nuestra comunidad y ayudar a quienes más lo necesitan.",
+  },
+  {
+    id: 3,
+    imgUrl: "/testimonios/Julieta-Iara.png",
+    name: "Julieta Iara Testa",
+    opinion:
+      "Es una experiencia maravillosa, siendo parte del club además de realizar servicio a la comunidad y formarte como un futuro líder, conoces gente maravillosa y vives experiencias realmente hermosas",
+  },
+  {
+    id: 4,
+    imgUrl: "/testimonios/Francisco-Carrizo.png",
+    name: "Francisco Carrizo",
+    opinion:
+      "Llevo más de un año en el club y mí experiencia es totalmente positiva! En el club supe encontrar una faceta nueva de mí que me sorprende diariamente, voy a estar agradecido de por vida al club y a mis compañeros",
+  },
+  {
+    id: 5,
+    imgUrl: "/testimonios/Ana-Belez.png",
+    name: "Ana Belez Diaz Paez",
+    opinion:
+      "En Rotaract buscamos crear un mundo mejor!! Fomentando nuestros valores, nuestra creatividad y nuestra pasión ♡",
+  },
+  {
+    id: 6,
+    imgUrl: "/testimonios/Paula-Lucero.png",
+    name: "Paula Lucero",
+    opinion:
+      "Es una experiencia súper enriquecedora, inicié en rotaract para tener algo que hacer en mí tiempo libre y ahora crecí personalmente y profesionalmente en muchos aspectos a la vez que ayudo a la comunidad 🫶🏻 ♡",
+  },
+  {
+    id: 7,
+    imgUrl: "/testimonios/Florencia-Medina.png",
+    name: "Florencia Medina",
+    opinion:
+      "Mi experiencia en Rotaract es única. Se podría decir que encontré mi lugar en el mundo. Un lugar a donde estoy en constante aprendizaje y crecimiento. Donde me enseña a mirar las cosas de otro modo, desde otra perspectiva. ",
+  },
+  {
+    id: 8,
+    imgUrl: "/testimonios/Diego-Gomez.png",
+    name: "Diego Gomez Vera",
+    opinion:
+      "En Rotaract aprendí muchas herramientas que me ayudaron a organizar mi vida personal y profesional. Muchos creen que sólo hacemos servicio a la comunidad, ese siempre es nuestro fin, pero también nos formamos como líderes y profesionales.",
+  },
+];

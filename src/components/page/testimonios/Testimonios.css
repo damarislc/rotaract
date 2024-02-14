@@ -1,0 +1,139 @@
+#testimonios-main {
+  height: 500px;
+  background: linear-gradient(
+      229deg,
+      #099 11.26%,
+      rgba(247, 168, 27, 0.5) 60.47%,
+      #872175 102.99%
+    ),
+    url("/testimonios.png");
+  flex-shrink: 0;
+  background-size: cover;
+  background-blend-mode: overlay;
+  margin-bottom: 108px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#testimonios-main > h2 {
+  color: #ffff;
+  text-align: center;
+  font-family: Rustico;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 32px;
+}
+
+.box-testimonio {
+  width: 264px;
+  height: 350px;
+  margin-right: 27px;
+  margin-left: 27px;
+}
+
+.box-testimonio > div {
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonio-image {
+  margin-top: -40px;
+}
+
+.box-name {
+  color: #d9377a;
+  text-align: center;
+  font-family: Hind;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.box-opinion {
+  color: #000;
+  text-align: center;
+  font-family: Hind;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.testimonios-carousel {
+  /* padding-top: 115px; */
+  /*  margin-left: 259px; */
+  margin-top: 15px;
+  overflow: visible !important;
+  /*  display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 1010px;
+}
+
+.testimonios-carousel .css-1f8sh1y {
+  height: 307px !important;
+}
+
+.css-1l7c0cy {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonios-carousel .css-1l7c0cy div {
+  display: flex;
+}
+
+.testimonios-carousel .css-1abc02a button,
+.testimonios-carousel .css-hn784z button {
+  background-color: #0078b0;
+}
+
+.testimonios-carousel .css-1abc02a:hover button,
+.testimonios-carousel .css-hn784z:hover button {
+  background-color: #0078b0b4;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+  .testimonios-carousel {
+    width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  #testimonios-main {
+    margin-bottom: 18px;
+  }
+  .testimonios-carousel {
+    width: 380px;
+  }
+}
+
+/* Galaxy Fold*/
+@media (max-width: 280px) {
+  #testimonios-main {
+    height: 600px;
+    margin-bottom: 18px;
+  }
+  .testimonios-carousel {
+    width: 280px;
+  }
+
+  .box-testimonio {
+    width: 200px;
+    height: 450px;
+    margin-right: 27px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width: 560px) {
+}
+@media (max-width: 450px) {
+}

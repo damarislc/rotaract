@@ -161,3 +161,11 @@
     align-items: center;
   }
 }
+
+/* Galaxy Fold*/
+@media (max-width: 280px) {
+  .image-extra img {
+    width: 260px !important;
+    height: 293px !important;
+  }
+}

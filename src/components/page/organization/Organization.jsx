@@ -1,5 +1,5 @@
 import "./Organization.css";
-import { orgData } from "../../../data";
+import { orgData } from "../../../data.js";
 import Org from "./Org";
 import Carousel from "react-material-ui-carousel";
 import { useMediaQuery } from "react-responsive";
@@ -233,7 +233,7 @@ const Organization = ({ loadOrgDesc, showhide }) => {
         </>
       )}
       {isMediumScreen && (
-        <Carousel className="org-carousel">
+        <Carousel className="org-carousel" autoPlay={false}>
           {isMobileScreen ? org : items}
         </Carousel>
       )}

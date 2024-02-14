@@ -199,4 +199,26 @@
   }
 }
 
+@media (max-width: 315px) {
+  .div-footer {
+    height: 400px;
+  }
+  .div-email {
+    flex-direction: column;
+  }
+
+  .div-email input {
+    margin-bottom: 12px;
+  }
+  /* .div-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .div-register p {
+    margin-left: 12px;
+  }
+}
+
 /* Pantallas <= 315 se desfasa el input email */
