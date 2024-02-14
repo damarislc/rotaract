@@ -80,10 +80,12 @@
   height: 32px;
   border-radius: 10px;
   border: 1px solid #b5b5b5;
+  padding-left: 12px;
 }
 
 textarea.contact-textfield {
   height: 125px;
+  padding-top: 12px;
 }
 
 .send-message {
